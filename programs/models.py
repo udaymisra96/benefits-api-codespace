@@ -204,6 +204,9 @@ class Program(models.Model):
 
     def __unicode__(self):
         return self.name.text
+    
+    def __str__(self):
+        return self.name_abbreviated
 
 
 class UrgentNeedFunction(models.Model):
@@ -295,6 +298,10 @@ class UrgentNeed(models.Model):
 
     def __str__(self):
         return self.name.text
+    
+        
+    def __str__(self):
+        return self.name
 
 
 class NavigatorCounty(models.Model):
@@ -364,6 +371,10 @@ class Navigator(models.Model):
 
     def __str__(self):
         return self.name.text
+    
+        
+    def __str__(self):
+        return self.name
 
 
 class WebHookFunction(models.Model):
